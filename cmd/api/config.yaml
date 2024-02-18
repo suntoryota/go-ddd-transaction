@@ -1,0 +1,18 @@
+app:
+  name: onlineShop
+  port: 4000
+  enryption:
+    salt: 10
+    jwt_secret: secretToken
+
+db :
+  host: localhost
+  port: 5432
+  dbname: onlineShop
+  user: postgres
+  password: P455w0rd
+  connection_pool:
+    max_idle_connection: 10
+    max_open_connection: 30
+    max_lifetime_connection: 60 #second
+    max_idletime_connection:  60 #second
